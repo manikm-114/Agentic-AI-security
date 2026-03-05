@@ -1,0 +1,11 @@
+{
+  "name": "all_read_all_forward",
+  "rules": {
+    "READ_EMAIL": "ALL",
+    "READ_DRIVE": "ALL",
+    "SEND_EMAIL": "ALL",
+    "FORWARD_FILE": "ALL",
+    "DELETE_FILE": "ALL",
+    "DELETE_EMAIL": "ALL"
+  }
+}

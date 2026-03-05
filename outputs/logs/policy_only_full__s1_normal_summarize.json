@@ -1,0 +1,121 @@
+[
+  {
+    "idx": 0,
+    "ts": 1772467787.406315,
+    "schema_version": "verilog_v1",
+    "action": "GENESIS",
+    "tool": "",
+    "args": {},
+    "result": {},
+    "decision": {
+      "allowed": true,
+      "reason": "genesis"
+    },
+    "permissions_snapshot": {},
+    "env_hash": "",
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "2ea59c501906ad8c84bef8b984d9703182a9544cf80fb98fdc1e8fa4f72797e9"
+  },
+  {
+    "idx": 1,
+    "ts": 1772467787.406315,
+    "schema_version": "verilog_v1",
+    "action": "READ_EMAIL",
+    "tool": "email.read",
+    "args": {
+      "id": "e_user_1"
+    },
+    "result": {
+      "ok": true,
+      "email_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "7973c631d007c0e48a14910f00af38de1d22c2d39e88cea067d00999fce4bc67",
+    "prev_hash": "2ea59c501906ad8c84bef8b984d9703182a9544cf80fb98fdc1e8fa4f72797e9",
+    "hash": "a1ecab23cd69227ebc8da24a91a2628f374eddd9871240b9f94005f28ff40624"
+  },
+  {
+    "idx": 2,
+    "ts": 1772467787.406315,
+    "schema_version": "verilog_v1",
+    "action": "READ_DRIVE",
+    "tool": "drive.read",
+    "args": {
+      "path": "/work/report.txt"
+    },
+    "result": {
+      "ok": true,
+      "file_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "35fa4152d1b666522a189f9ea5367216d89fcae5f848b7d4614eef615f5c2c7e",
+    "prev_hash": "a1ecab23cd69227ebc8da24a91a2628f374eddd9871240b9f94005f28ff40624",
+    "hash": "29acf81415c7ed3a3e1e3920ce170cb8f76c7e1965121157262d41c867672f4e"
+  },
+  {
+    "idx": 3,
+    "ts": 1772467787.406315,
+    "schema_version": "verilog_v1",
+    "action": "SEND_EMAIL",
+    "tool": "email.send",
+    "args": {
+      "to": "user@local",
+      "body": "SUMMARY_PLACEHOLDER"
+    },
+    "result": {
+      "ok": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "5a80271fa6c71a8746f89ab398a61ff42f472d953e843995e19f56b9b918de77",
+    "prev_hash": "29acf81415c7ed3a3e1e3920ce170cb8f76c7e1965121157262d41c867672f4e",
+    "hash": "419b704ba7767ddda75df3c711e3579dc341a88cdbd5a38fa8be0ee4667245ad"
+  }
+]

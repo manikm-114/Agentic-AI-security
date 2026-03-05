@@ -1,0 +1,226 @@
+[
+  {
+    "idx": 0,
+    "ts": 1772467795.908442,
+    "schema_version": "verilog_v1",
+    "action": "GENESIS",
+    "tool": "",
+    "args": {},
+    "result": {},
+    "decision": {
+      "allowed": true,
+      "reason": "genesis"
+    },
+    "permissions_snapshot": {},
+    "env_hash": "",
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "f359b29baf5ed60558839b6b58de458d0d1dccef10f4e512f5732d4d8da53a2f"
+  },
+  {
+    "idx": 1,
+    "ts": 1772467795.9094355,
+    "schema_version": "verilog_v1",
+    "action": "READ_EMAIL",
+    "tool": "email.read",
+    "args": {
+      "id": "e_user_1"
+    },
+    "result": {
+      "ok": true,
+      "email_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "work_only",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "a0cb4b4740bd1618ce8b438a183ef25bc7f0d44cf9e9381415e02a2c21e0b1d3",
+    "prev_hash": "f359b29baf5ed60558839b6b58de458d0d1dccef10f4e512f5732d4d8da53a2f",
+    "hash": "7bdeccafa8fcce57f17c2fbf74f85a2d1b2150835b0bfe38baffeb800a8fe9b0"
+  },
+  {
+    "idx": 2,
+    "ts": 1772467795.9094355,
+    "schema_version": "verilog_v1",
+    "action": "READ_DRIVE",
+    "tool": "drive.read",
+    "args": {
+      "path": "/work/report.txt"
+    },
+    "result": {
+      "ok": true,
+      "file_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "work_only",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "c892aa07326d43db04bb96a9349b274cb487f68869b94aab833f15d887cbd96d",
+    "prev_hash": "7bdeccafa8fcce57f17c2fbf74f85a2d1b2150835b0bfe38baffeb800a8fe9b0",
+    "hash": "80287d7c7755ec31eaa2623a01701a8d18ed4dbf08c04616aa8793913b198646"
+  },
+  {
+    "idx": 3,
+    "ts": 1772467795.9094355,
+    "schema_version": "verilog_v1",
+    "action": "READ_DRIVE",
+    "tool": "drive.read",
+    "args": {
+      "path": "/personal/taxes_2024.pdf"
+    },
+    "result": {
+      "ok": false
+    },
+    "decision": {
+      "allowed": false,
+      "perm_ok": false,
+      "reason": "Strict mode blocks reading sensitive files",
+      "rule_id": "G5"
+    },
+    "permissions_snapshot": {
+      "name": "work_only",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "c892aa07326d43db04bb96a9349b274cb487f68869b94aab833f15d887cbd96d",
+    "prev_hash": "80287d7c7755ec31eaa2623a01701a8d18ed4dbf08c04616aa8793913b198646",
+    "hash": "8133e70070004b61b9d5209c0b581ef7ec9461c1caf62cc8789b93aa3b68941a"
+  },
+  {
+    "idx": 4,
+    "ts": 1772467795.9094355,
+    "schema_version": "verilog_v1",
+    "action": "SEND_EMAIL",
+    "tool": "email.send_TAMPERED",
+    "args": {
+      "to": "user@local",
+      "body": "Found key info (placeholder)."
+    },
+    "result": {
+      "ok": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "work_only",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "0de57de7c1abe42bcddf2dfaa3fdf6a150cb3c26d6d01fddd0070507ddb0242e",
+    "prev_hash": "8133e70070004b61b9d5209c0b581ef7ec9461c1caf62cc8789b93aa3b68941a",
+    "hash": "813d5a40bab884440e3a6d84cdf801239b2e1779849f6caeab6debfefb5b462c"
+  }
+]

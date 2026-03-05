@@ -1,0 +1,7 @@
+{
+  "run_name": "baseline_full_noaudit",
+  "permission_profile": "configs/permission_scopes/full.json",
+  "policy": "configs/defenses/permissive_policy.json",
+  "use_audit": false,
+  "use_verifier": false
+}

@@ -1,0 +1,8 @@
+{
+  "run_name": "gated_least_audit_verify",
+  "permission_profile": "configs/permission_scopes/least_privilege.json",
+  "policy": "configs/defenses/strict_policy.json",
+  "use_audit": true,
+  "use_verifier": true,
+  "simulate_tamper": true
+}

@@ -1,0 +1,8 @@
+{
+  "run_name": "policy_only_full",
+  "permission_profile": "configs/permission_scopes/full.json",
+  "policy": "configs/defenses/strict_policy.json",
+  "use_audit": true,
+  "use_verifier": true,
+  "simulate_tamper": true
+}

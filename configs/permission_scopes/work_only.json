@@ -1,0 +1,11 @@
+{
+  "name": "work_only",
+  "rules": {
+    "READ_EMAIL": { "email": true },
+    "READ_DRIVE": { "drive_prefixes": ["/work/"] },
+    "SEND_EMAIL": { "email": true },
+    "FORWARD_FILE": { "drive_prefixes": ["/work/"] },
+    "DELETE_FILE": { "drive_prefixes": ["/work/tmp/"] },
+    "DELETE_EMAIL": { "email": true }
+  }
+}

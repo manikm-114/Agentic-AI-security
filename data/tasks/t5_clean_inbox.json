@@ -1,0 +1,6 @@
+{
+  "name": "clean_inbox",
+  "goal": "CLEAN_INBOX",
+  "reply_to": "user@local",
+  "email_id": "e_user_1"
+}

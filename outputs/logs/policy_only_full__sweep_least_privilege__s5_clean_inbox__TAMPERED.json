@@ -1,0 +1,174 @@
+[
+  {
+    "idx": 0,
+    "ts": 1772467790.346076,
+    "schema_version": "verilog_v1",
+    "action": "GENESIS",
+    "tool": "",
+    "args": {},
+    "result": {},
+    "decision": {
+      "allowed": true,
+      "reason": "genesis"
+    },
+    "permissions_snapshot": {},
+    "env_hash": "",
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "ab5cd3f2ceb2b2b5aff48d1f0aefe227f5eae1325fc56741d1bd7677475a4ea6"
+  },
+  {
+    "idx": 1,
+    "ts": 1772467790.346076,
+    "schema_version": "verilog_v1",
+    "action": "READ_EMAIL",
+    "tool": "email.read",
+    "args": {
+      "id": "e_user_1"
+    },
+    "result": {
+      "ok": true,
+      "email_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "least_privilege",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "76f882454436e05e55cf0a17ce78579f8c0e578f6dbdf9d2bcf2ef0cd9813de3",
+    "prev_hash": "ab5cd3f2ceb2b2b5aff48d1f0aefe227f5eae1325fc56741d1bd7677475a4ea6",
+    "hash": "46429b9d014cbff9ef3ee2c22d8dd5e416a854743ba682a7345d5b4670414a5e"
+  },
+  {
+    "idx": 2,
+    "ts": 1772467790.346076,
+    "schema_version": "verilog_v1",
+    "action": "DELETE_EMAIL",
+    "tool": "email.delete_TAMPERED",
+    "args": {
+      "id": "e_important_1"
+    },
+    "result": {
+      "ok": false
+    },
+    "decision": {
+      "allowed": false,
+      "perm_ok": true,
+      "reason": "Email deletion requires explicit approval",
+      "rule_id": "G6"
+    },
+    "permissions_snapshot": {
+      "name": "least_privilege",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "76f882454436e05e55cf0a17ce78579f8c0e578f6dbdf9d2bcf2ef0cd9813de3",
+    "prev_hash": "46429b9d014cbff9ef3ee2c22d8dd5e416a854743ba682a7345d5b4670414a5e",
+    "hash": "ade8e0807faaf02e125b500e12c853b3ed9318d5a8976f42ef52817d5f8219a9"
+  },
+  {
+    "idx": 3,
+    "ts": 1772467790.346076,
+    "schema_version": "verilog_v1",
+    "action": "SEND_EMAIL",
+    "tool": "email.send",
+    "args": {
+      "to": "user@local",
+      "body": "Inbox cleaned (placeholder)."
+    },
+    "result": {
+      "ok": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "least_privilege",
+      "rules": {
+        "READ_EMAIL": {
+          "email": true
+        },
+        "READ_DRIVE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "SEND_EMAIL": {
+          "email": true
+        },
+        "FORWARD_FILE": {
+          "drive_prefixes": [
+            "/work/"
+          ]
+        },
+        "DELETE_FILE": {
+          "drive_prefixes": [
+            "/work/tmp/"
+          ]
+        },
+        "DELETE_EMAIL": {
+          "email": true
+        }
+      }
+    },
+    "env_hash": "4c98dce22d7d797730d09c8d38c5c267c1cdc34dfe3dec38574d343608602da0",
+    "prev_hash": "ade8e0807faaf02e125b500e12c853b3ed9318d5a8976f42ef52817d5f8219a9",
+    "hash": "f59cc0d21d77883f789d98b073e29b5bd279988d08ed0c22ca20cca890d2d822"
+  }
+]

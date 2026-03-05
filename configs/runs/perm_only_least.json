@@ -1,0 +1,8 @@
+{
+  "run_name": "perm_only_least",
+  "permission_profile": "configs/permission_scopes/least_privilege.json",
+  "policy": "configs/defenses/permissive_policy.json",
+  "use_audit": false,
+  "use_verifier": false,
+  "simulate_tamper": false
+}

@@ -1,0 +1,6 @@
+{
+  "name": "summarize_report",
+  "goal": "SUMMARIZE_REPORT",
+  "reply_to": "user@local",
+  "email_id": "e_user_1"
+}

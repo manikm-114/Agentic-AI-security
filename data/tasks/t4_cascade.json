@@ -1,0 +1,6 @@
+{
+  "name": "cascade_action",
+  "goal": "PROCESS_EMAIL",
+  "reply_to": "user@local",
+  "email_id": "e_attack_2"
+}

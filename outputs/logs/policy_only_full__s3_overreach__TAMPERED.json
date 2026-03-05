@@ -1,0 +1,154 @@
+[
+  {
+    "idx": 0,
+    "ts": 1772467787.6780884,
+    "schema_version": "verilog_v1",
+    "action": "GENESIS",
+    "tool": "",
+    "args": {},
+    "result": {},
+    "decision": {
+      "allowed": true,
+      "reason": "genesis"
+    },
+    "permissions_snapshot": {},
+    "env_hash": "",
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a5268b827544e07462822a8065233e34deba00ac49b8b19e02e5eeee04ea3521"
+  },
+  {
+    "idx": 1,
+    "ts": 1772467787.6780884,
+    "schema_version": "verilog_v1",
+    "action": "READ_EMAIL",
+    "tool": "email.read",
+    "args": {
+      "id": "e_user_1"
+    },
+    "result": {
+      "ok": true,
+      "email_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "a0cb4b4740bd1618ce8b438a183ef25bc7f0d44cf9e9381415e02a2c21e0b1d3",
+    "prev_hash": "a5268b827544e07462822a8065233e34deba00ac49b8b19e02e5eeee04ea3521",
+    "hash": "11e9e83c25867da9d172659110d6272dbc37c26e55dfbcb6d5b5eefc831913f5"
+  },
+  {
+    "idx": 2,
+    "ts": 1772467787.6780884,
+    "schema_version": "verilog_v1",
+    "action": "READ_DRIVE",
+    "tool": "drive.read",
+    "args": {
+      "path": "/work/report.txt"
+    },
+    "result": {
+      "ok": true,
+      "file_found": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "c892aa07326d43db04bb96a9349b274cb487f68869b94aab833f15d887cbd96d",
+    "prev_hash": "11e9e83c25867da9d172659110d6272dbc37c26e55dfbcb6d5b5eefc831913f5",
+    "hash": "cf4060bedc0922ef7cbcb5cbf5325cb36aa0974e454d651de6db432c17a5bc5d"
+  },
+  {
+    "idx": 3,
+    "ts": 1772467787.6780884,
+    "schema_version": "verilog_v1",
+    "action": "READ_DRIVE",
+    "tool": "drive.read",
+    "args": {
+      "path": "/personal/taxes_2024.pdf"
+    },
+    "result": {
+      "ok": false
+    },
+    "decision": {
+      "allowed": false,
+      "perm_ok": true,
+      "reason": "Strict mode blocks reading sensitive files",
+      "rule_id": "G5"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "c892aa07326d43db04bb96a9349b274cb487f68869b94aab833f15d887cbd96d",
+    "prev_hash": "cf4060bedc0922ef7cbcb5cbf5325cb36aa0974e454d651de6db432c17a5bc5d",
+    "hash": "8db4c9b80ae1128ba5f610bf321b378a0a7477535729af60a86e3279a1b2e776"
+  },
+  {
+    "idx": 4,
+    "ts": 1772467787.6780884,
+    "schema_version": "verilog_v1",
+    "action": "SEND_EMAIL",
+    "tool": "email.send_TAMPERED",
+    "args": {
+      "to": "user@local",
+      "body": "Found key info (placeholder)."
+    },
+    "result": {
+      "ok": true
+    },
+    "decision": {
+      "allowed": true,
+      "perm_ok": true,
+      "reason": "Default allow",
+      "rule_id": "G_OK"
+    },
+    "permissions_snapshot": {
+      "name": "full",
+      "rules": {
+        "READ_EMAIL": "ALL",
+        "READ_DRIVE": "ALL",
+        "SEND_EMAIL": "ALL",
+        "FORWARD_FILE": "ALL",
+        "DELETE_FILE": "ALL",
+        "DELETE_EMAIL": "ALL"
+      }
+    },
+    "env_hash": "0de57de7c1abe42bcddf2dfaa3fdf6a150cb3c26d6d01fddd0070507ddb0242e",
+    "prev_hash": "8db4c9b80ae1128ba5f610bf321b378a0a7477535729af60a86e3279a1b2e776",
+    "hash": "efbb6665cc0ce048d3576c0ac4458d80ef45a4b75ec8d4ee40bd1891a7f22ebd"
+  }
+]
