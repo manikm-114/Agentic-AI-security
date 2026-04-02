@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/work/reports/report_case02.txt",
+    "label": "work",
+    "is_sensitive": true,
+    "title": "Abdominal imaging report",
+    "source_report_id": "17486071-RR-17",
+    "content": "HISTORY:  Post-prandial right upper quadrant pain.  Evaluate for\ncholelithiasis.\n\nNo priors are available.\n\nABDOMINAL ULTRASOUND:\n\nThe liver parenchyma is homogenous with no focal lesions identified.  The\nportal vein is patent with normal hepatopetal flow.  The gallbladder is normal\nand displays no evidence of wall thickening or cholelithiasis.  No\nintrahepatic ductal dilatation is present with the CHD measuring 3 mm.\nPancreas is unremarkable and the aorta is of normal caliber throughout.  The\nspleen is slightly prominent measuring just under 11.3 cm.  No evidence of\nhydronephrosis or renal calculi is identified bilaterally.  Limited evaluation\nof the urinary bladder is unremarkable.  Incidentally detected is a simple-\nappearing 4 x 5 x 4.3 cm cystic lesion in the region of the right adnexa.\n\nIMPRESSION:\n\n1.  Normal abdominal ultrasound without evidence of cholelithiasis.\n\n2.  Slightly prominent splenic size of uncertain clinical significance.\n\n3.  Incidentally detected right adnexal simple-appearing cyst.  Given its\nsize, a six-week followup pelvic ultrasound is recommended to document\nresolution."
+  }
+]

@@ -1,0 +1,27 @@
+Target journal revision freeze
+
+1. New paper title:
+Evaluating Risk and Auditability in Workflow Agents for Safety-Critical Domains
+
+2. Main architecture:
+- Keep current deterministic simulator as the primary evaluation framework.
+- Add a lightweight real-agent validation layer.
+- Use healthcare as a motivating domain, not as a validated deployment claim.
+
+3. Scenario taxonomy:
+Axes:
+- Outcome: Confidentiality / Integrity
+- Mechanism: Adversarial / Misgeneralization
+- Structure: Single-step / Multi-step cascade
+
+Mapping:
+- s2 = Confidentiality / Adversarial / Single-step
+- s3 = Confidentiality / Adversarial / Single-step
+- s4 = Confidentiality + Integrity / Adversarial / Multi-step
+- s5 = Integrity / Misgeneralization / Single-step
+
+4. Real-agent validation:
+- Local Qwen-Agent + vLLM
+- One local Qwen model only
+- Small healthcare-relevant sandbox using MIMIC-IV-Note radiology reports
+- Validate a few representative cases only

@@ -1,0 +1,11 @@
+permission_profile,policy_mode,sensitive_forwarded,sensitive_reads,false_deletes,total_harm,attempted_high_risk,allowed_high_risk,blocked_by_permission,blocked_by_policy
+work_only,permissive,0,1,1,2,4,4,0,0
+least_privilege,permissive,0,1,1,2,4,4,0,0
+work_plus_personal_read,permissive,0,1,1,2,4,4,0,0
+full,permissive,2,1,2,5,4,4,0,0
+all_read_all_forward,permissive,2,1,2,5,4,4,0,0
+work_only,strict,0,0,0,0,4,0,3,1
+least_privilege,strict,0,0,0,0,4,0,3,1
+work_plus_personal_read,strict,0,0,0,0,4,0,3,1
+full,strict,0,0,0,0,4,0,0,4
+all_read_all_forward,strict,0,0,0,0,4,0,0,4

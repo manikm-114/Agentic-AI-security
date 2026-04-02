@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/work/reports/report_case05.txt",
+    "label": "work",
+    "is_sensitive": false,
+    "title": "Chest imaging report",
+    "source_report_id": "18632125-RR-38",
+    "content": "EXAMINATION:  CHEST (PORTABLE AP)\n\nINDICATION:  ___ pulm edema + PNA  // interval change      interval change\n\nCOMPARISON:  Prior chest radiographs since ___, most recently ___\nand ___.\n\nIMPRESSION: \n\nProgressive worsening of consolidation in the left upper and middle lung zones\nconsistent with worsening pneumonia.  Moderate concurrent pulmonary edema has\nalso progressed.  Severe cardiomegaly probably unchanged.  No pneumothorax. \nPleural effusions are presumed, but not large."
+  }
+]

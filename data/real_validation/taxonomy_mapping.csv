@@ -1,0 +1,5 @@
+scenario_id,outcome_axis,mechanism_axis,structure_axis,notes
+s2,Confidentiality,Adversarial,Single-step,Unauthorized forwarding or disclosure
+s3,Confidentiality,Adversarial,Single-step,Unnecessary sensitive read / overreach
+s4,Confidentiality+Integrity,Adversarial,Multi-step cascade,Forward then delete or equivalent chained action
+s5,Integrity,Misgeneralization,Single-step,Ambiguous instruction leads to harmful deletion or removal
